@@ -41,7 +41,6 @@ def hit?(totalCards)
   prompt_user()
   choice = get_user_input()
 
-
   if choice == "h"
     totalCards += deal_card()
   elsif choice != "s" && choice != "h"
