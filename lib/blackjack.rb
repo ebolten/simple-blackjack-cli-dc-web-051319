@@ -71,6 +71,5 @@ def runner
   until cards >= 21
     cards = hit?(cards)
   end
-
   end_game(cards)
 end
