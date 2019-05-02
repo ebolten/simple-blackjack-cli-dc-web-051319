@@ -63,9 +63,9 @@ def runner
   # code runner here
   welcome()
   cards = initial_round()
-  hit?(cards)
 
   until cards <= 21
+    cards = hit?(cards)
 
 
 
