@@ -41,7 +41,6 @@ def hit?(totalCards)
   prompt_user()
 
   if get_user_input() == 's'
-    puts "Not dealing another card."
   elsif get_user_input() == 'h'
     totalCards += deal_card()
   else
