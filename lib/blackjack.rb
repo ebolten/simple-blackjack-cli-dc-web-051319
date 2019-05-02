@@ -64,10 +64,11 @@ def runner
   welcome()
   cards = initial_round()
 
-  until cards <= 21
+  until cards == 21
     cards = hit?(cards)
+    if cards > 21
+      end_game(cards)
+      break
   end
-
-  end_game(cards)
 
 end
