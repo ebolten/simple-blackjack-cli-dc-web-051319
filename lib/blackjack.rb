@@ -39,11 +39,10 @@ end
 def hit?(totalCards)
   # code hit? here
   prompt_user()
-  choice = get_user_input()
 
-  if choice == 's'
+  if get_user_input() == 's'
     puts "Not dealing another card."
-  elsif choice == 'h'
+  elsif get_user_input() == 'h'
     totalCards += deal_card()
   else
     invalid_command()
