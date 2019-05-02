@@ -66,8 +66,8 @@ end
 def runner
   # code runner here
   welcome()
-  initial_round()
-  cards = hit?(display_card_total(deal_card() + deal_card()))
+  cards = initial_round()
+  hit?(cards)
   until cards >= 21
     cards = hit?(cards)
   end
