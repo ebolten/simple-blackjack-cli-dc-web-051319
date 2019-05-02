@@ -41,11 +41,10 @@ def hit?(totalCards)
   prompt_user()
   choice = get_user_input()
 
-  if choice == "s"
-    puts "Stay"
-  elsif choice == "h"
+
+  if choice == "h"
     totalCards += deal_card()
-  else
+  elsif choice != "s" && choice != "h"
     invalid_command()
   end
 
